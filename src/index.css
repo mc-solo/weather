@@ -6,6 +6,7 @@
 
 @layer base {
   html {
+    font-size: larger;
     font-family: "Poppins", sans-serif;
     color: whitesmoke;
     /* background-color: #222; */
@@ -13,5 +14,5 @@
 }
 
 .btn {
-  @apply mx-auto max-w-screen-lg mt-4  py-3  transition ease-in rounded-md hover:font-bold;
+  @apply mx-auto max-w-screen-lg mt-4   py-3  transition  ease-in rounded-md hover:font-bold;
 }
