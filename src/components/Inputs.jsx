@@ -3,11 +3,11 @@ import { BiSearch, BiCurrentLocation } from "react-icons/bi"
 const Inputs = () => {
     return (
         <div className='flex flex-row justify-center my-6'>
-            <div className="flex flex-row w-2/3 items-center justify-center space-x-4">
+            <div className="flex flex-row w-2/3 items-center justify-around max-w-screen-md space-x-4">
                 <input
                     type="text"
                     placeholder="search city..."
-                    className="text-gray-500 text-xl font-light p-2 w-full shadow-xl capitalize focus:outline-none rounded-[4px]
+                    className="text-gray-500 text-xl font-light p-2  shadow-xl  capitalize focus:outline-none rounded-[4px] w-full
                     placeholder:lowercase"
                 />
 
