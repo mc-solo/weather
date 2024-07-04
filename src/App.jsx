@@ -3,6 +3,7 @@ import { FaReact } from 'react-icons/fa'
 import TopBUttons from './components/TopBUttons'
 import Inputs from './components/Inputs'
 import TimeAndLocation from './components/TimeAndLocation'
+import TempAndDetails from './components/TempAndDetails'
 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <TopBUttons />
       <Inputs />
       <TimeAndLocation />
+      <TempAndDetails />
     </div>
   )
 }
