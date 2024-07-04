@@ -4,6 +4,7 @@ import TopBUttons from './components/TopBUttons'
 import Inputs from './components/Inputs'
 import TimeAndLocation from './components/TimeAndLocation'
 import TempAndDetails from './components/TempAndDetails'
+import Forecast from './components/Forecast'
 
 
 const App = () => {
@@ -12,8 +13,11 @@ const App = () => {
 
       <TopBUttons />
       <Inputs />
+
       <TimeAndLocation />
       <TempAndDetails />
+      <Forecast />
+      <Forecast />
     </div>
   )
 }
