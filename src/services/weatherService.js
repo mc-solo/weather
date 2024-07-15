@@ -11,7 +11,7 @@ const getWeatherData = async (infoType, searchParams) => {
             throw new Error('Response was not okay!');
         } else {
             const data = await response.json();
-            return data;
+            console.log(data);
         }
     } catch (error) {
         console.warn('Error encountered during data fetch:', error.message);

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const TopBUttons = () => {
+const TopButtons = () => {
     return (
         <nav className='flex flex-wrap items-center justify-around my-6'>
             <button className='btn'>Addis Ababa</button>
@@ -9,10 +9,8 @@ const TopBUttons = () => {
             <button className='btn'>Kanzas</button>
             <button className='btn'>London</button>
 
-
-
         </nav>
     )
 }
 
-export default TopBUttons
+export default TopButtons
