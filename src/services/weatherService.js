@@ -1,3 +1,5 @@
+import { TbEmpathize } from "react-icons/tb";
+
 const API_KEY = '60c0433e154c073b08503076cdc2b0da';
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/';
 
@@ -19,3 +21,23 @@ const getWeatherData = async (infoType, searchParams) => {
 };
 
 export default getWeatherData;
+
+
+// this formats the current data from the api call
+const formatCurrent = (data) => {
+    const {
+        coord: { lat, lon },
+        main: { temp, feels_like, temp_min, temp_max, humidity },
+        name, dt, sys: { country, sunrise, sunset }
+    } = data;
+
+}
+
+
+// this one gets the formatted data from the above function
+const getFormattedWeatherData = async (searchParams) => {
+    const formattedCurrentWeather = await getWeatherData(
+        'weather',
+        searchParams
+    ).then();
+};
