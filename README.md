@@ -31,7 +31,7 @@ Welcome to the Weather Forecast Application! This project is built with React Ja
 
 ## Credits
 
-- **Development:** [Your Name]
+- **Development:** Wondwosen A.
 - **UI/UX Design:** Yared
 
 ## License
