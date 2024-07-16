@@ -10,7 +10,6 @@ import getWeatherData from './services/weatherService'
 const App = () => {
   const getWeather = async () => {
     const data = await getWeatherData('weather', {q:'berlin'})
-    console.log(data)
   }
 
   getWeather();
