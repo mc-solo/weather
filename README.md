@@ -16,8 +16,16 @@ Welcome to the Weather Forecast Application! This project is built with React Ja
 
 - **React JS:** A JavaScript library for building user interfaces.
 - **Fetch API:** Used to retrieve weather data from a weather API.
-- **CSS:** Styling the application for a responsive and visually appealing design.
-- **Figma:** Design and prototyping tool used for the UI/UX design by Yared.
+- **CSS or Tailwind:** Styling the application for a responsive and visually appealing design.
+- **Figma:** Design and prototyping tool used for the UI/UX.
+
+## Installation
+
+1. **Clone repository**
+   `git clone github.com/mc-solo/weather.git`
+2. **Navigate to root**
+3. **Install dependencies**
+   `npm i`
 
 ## How to Use
 
@@ -27,7 +35,7 @@ Welcome to the Weather Forecast Application! This project is built with React Ja
 
 ## Screenshots
 
-![Weather Forecast App Screenshot](path/to/screenshot.png)
+![Weather Forecast App Screenshot](/src/screenshot/screenshot.png)
 
 ## Credits
 
