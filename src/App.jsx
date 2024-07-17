@@ -27,14 +27,14 @@ const App = () => {
 
   return (
     <div className="mx-auto max-w-screen-2xl min-w-full  py-2 px-20 bg-gradient-to-br shadow-xl shadow-gray-400 from-cyan-600 to-blue-700 text-2xl">
-      <TopButtons />
+      <TopButtons setQuery={setQuery} />
       <Inputs />
       {weather && (
         <>
           <TimeAndLocation weather={weather} />
           <TempAndDetails weather={weather} />
-          <Forecast />
-          <Forecast />
+          <Forecast title="3 hour step forecast" data={weather.hourly} />
+          <Forecast title="daily forecast" data={weather.daily} />
         </>
       )}
     </div>
