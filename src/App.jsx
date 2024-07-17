@@ -12,9 +12,11 @@ const App = () => {
   const [weather, setWeather] = useState(null);
 
   const getWeather = async () => {
-    const data = await getFormattedWeatherData({ q: "berlin" }).then((data) => {
-      setWeather(data);
-    });
+    const data = await getFormattedWeatherData({ ...query, units }).then(
+      (data) => {
+        setWeather(data);
+      }
+    );
     // console.log(data);
   };
 
