@@ -17,7 +17,6 @@ const App = () => {
         setWeather(data);
       }
     );
-    // console.log(data);
   };
 
   useEffect(() => {
@@ -27,7 +26,7 @@ const App = () => {
   return (
     <div className="mx-auto max-w-screen-2xl min-w-full  py-2 px-20 bg-gradient-to-br shadow-xl shadow-gray-400 from-cyan-600 to-blue-700 text-2xl">
       <TopButtons setQuery={setQuery} />
-      <Inputs />
+      <Inputs setQuery={setQuery} setUnits={setUnits} />
       {weather && (
         <>
           <TimeAndLocation weather={weather} />
