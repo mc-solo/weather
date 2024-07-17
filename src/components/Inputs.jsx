@@ -3,9 +3,28 @@ import { BiSearch, BiCurrentLocation } from "react-icons/bi";
 
 const Inputs = ({ setQuery, setUnits }) => {
   const [city, setCity] = useState("");
+
+  //   handle current location
+  const handleLocationClick = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          console.log(latitude, longitude);
+          setQuery({ lat: latitude, lon: longitude });
+        },
+        (err) => {
+          console.error("location error", err);
+        }
+      );
+    }
+  };
+
+  //   handle the search button
   const handleSearchClick = () => {
     if (city !== "") setQuery({ q: city });
   };
+
   return (
     <div className="flex flex-row justify-center my-6">
       <div className="flex flex-row w-2/3 items-center justify-around max-w-screen-md space-x-4">
@@ -27,6 +46,7 @@ const Inputs = ({ setQuery, setUnits }) => {
         <BiCurrentLocation
           size={30}
           className="cursor-pointer transition ease-out hover:scale-125"
+          onClick={handleLocationClick}
         />
       </div>
 
